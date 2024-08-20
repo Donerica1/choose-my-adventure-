@@ -1,0 +1,48 @@
+#Greet the user and provide instructions
+print(f"Hi, there! I have an exciting story about a runaway dog. I can't
+wait to tell it. ")
+print(f"Before the story begins, I have a few questions I need you to
+answer.")
+print(f"After typing your answer, be sure to press the enter key.")
+input(f"\nPress the enter key to continue...")
+keepPlaying = "yes"
+while keepPlaying.lower() == "yes":
+#5 Questions Before the story begins
+breed = input(f"\nWhat breed is the runaway dog: ")
+while len(breed) == 0:
+breed = input(f"Please enter a breed: ")
+#Second Question
+dogName = input(f"What is the runaway dog's name: ")
+while len(dogName) == 0:
+dogName = input(f"Please enter a dog's name: ")
+#Third Question
+city = input(f"What major city do you live nearby: ")
+while len(city) == 0:
+city = input(f"Please enter a city: ")
+#Fourth Question
+restaurant = input(f"What is your favorite restaurant: ")
+while len(restaurant) == 0:
+restaurant = input(f"Please enter a restaurant: ")
+#Fifth Question
+number = input(f"What is your favorite number: ")
+while not number.isdigit():
+number = input(f"Value not recognized. Please enter a numeric
+value: ")
+#Story Starts
+print(f"\nLET'S GO!!!")
+print(f"\nOnce upon a time there was a beautiful {breed} named
+{dogName}. ")
+print(f"{dogName} always wanted to go outside and explore {city}. ")
+print(f"Today was {dogName}'s chance. The gate was accidently left
+open! ")
+print(f"{dogName} ran out the gate heading straight towards the city.
+")
+print(f"While walking down the street, {dogName} arrived at
+{restaurant}. He always wanted to eat there. ")
+#Decision 1
+sneakIntoRestaurant = input(f"\nShould {dogName} sneak into the
+restaurant? Type yes or no: ")
+while sneakIntoRestaurant.lower() != "yes" and
+sneakIntoRestaurant.lower() != "no":
+sneakIntoRestaurant = input("Please type yes or no: ")
+if sneakIntoRestaurant == "yes":
